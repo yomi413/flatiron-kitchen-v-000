@@ -1,3 +1,7 @@
-<% Ingredient.all.each do |ingredient| %>
-  <%= ingredient.name %>
-<% end %>
+<h1>List of Ingredients</h1>
+
+<ul>
+  <% Ingredient.all.each do |ingredient| %>
+    <li><%= ingredient.name %></li>
+  <% end %>
+</ul>
